@@ -1,0 +1,5 @@
+get_cbr_rate_job:  
+  cron: "*/1 * * * *"
+  class: "GetCbrRateJob"
+  queue: default
+  active_job: true

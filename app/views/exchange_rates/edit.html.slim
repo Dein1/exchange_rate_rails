@@ -1,0 +1,7 @@
+.container
+  h3 Set forced rate
+  = simple_form_for(@exchange_rate) do |f|
+    p
+      = f.input :date
+      = f.input :rate
+      = f.submit "Set new rate"
