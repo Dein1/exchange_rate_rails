@@ -32,13 +32,11 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootstrap', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'nokogiri'
-gem 'react-rails'
-gem 'sidekiq'
-gem 'sidekiq-cron'
 gem 'simple_form'
 gem 'slim-rails'
 gem 'sprockets-rails'
-gem 'webpacker'
+gem 'sidekiq'
+gem 'sidekiq-cron'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
