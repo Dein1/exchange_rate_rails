@@ -10,6 +10,7 @@ class ExchangeRatesController < ApplicationController
   def update
     @exchange_rate = ExchangeRate.last
     if @exchange_rate.update(exchange_rate_params)
+      ActionCable.server.broadcast('rate', rate: @exchange_rate.rate)
       redirect_to action: 'index'
     else
       render 'edit'
