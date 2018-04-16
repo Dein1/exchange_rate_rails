@@ -1,6 +1,7 @@
 require 'test_helper'
 class StartScrapingWorkerTest < MiniTest::Unit::TestCase
-  def test_example
-    skip "add some examples to (or delete) #{__FILE__}"
+  def test_quequeing
+    StartScrapingWorker.perform_async
+    assert_equal 1, StartScrapingWorker.jobs.size
   end
 end
